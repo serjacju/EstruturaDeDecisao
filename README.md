@@ -1,2 +1,2 @@
-# EstruturaDeDecisao
-Exercícios das aulas de Estrutura de Decisão
+# CursoLogicaDeProgramação
+Exercícios diversos sobre logica de programação
