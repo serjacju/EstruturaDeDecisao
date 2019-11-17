@@ -1,0 +1,33 @@
+algoritmo "Exercicio14"
+var
+n1, n2, media: real
+inicio
+escreva ("digite a primeira nota do aluno: ")
+leia (n1)
+escreva ("digite a segunda nota do aluno: ")
+leia (n2)
+media <- (n1+n2)/2
+limpatela
+Escreval ("A primeira nota do aluno é: ", n1)
+Escreval ("A segunda nota do aluno é: ", n2)
+
+se (media >= 9) entao
+   escreval ("A media do aluno é ", media, " - Conceito A - APROVADO")
+senao
+   se (media >= 7.5) e (media < 9) entao
+      escreval ("A media do aluno é ", media, " - Conceito B - APROVADO")
+   senao
+      se (media >= 6) e (media < 7.5) entao
+         escreval ("A media do aluno é ", media, " - Conceito C - APROVADO")
+      senao
+         se (media >= 4.0) e (media < 6.0) entao
+            escreval ("A media do aluno é ", media, " - Conceito D - REPROVADO")
+         senao
+            se (media >= 0) e (media < 4) entao
+               escreval ("A media do aluno é ", media, " - Conceito E - REPROVADO")
+            fimse
+         fimse
+      fimse
+   fimse
+fimse
+fimalgoritmo

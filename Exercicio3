@@ -1,0 +1,17 @@
+algoritmo "Identificação de masculino e feminino"
+var
+letra: caractere
+
+inicio
+Escreval ("Digite (M) para masculino e (F) para feminino")
+leia (letra)
+se (letra = "F") entao
+   escreval ("feminino")
+senao
+   se (letra = "M") entao
+      escreval ("masculino")
+   senao
+      escreval ("sexo inválido")
+   fimse
+fimse
+fimalgoritmo

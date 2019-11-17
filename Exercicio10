@@ -1,0 +1,24 @@
+algoritmo "Exercicio10"
+var
+turno: caractere
+inicio
+Escreva ("Em que turno você estuda? Digite [M]manhã, [V]tarde, ou [N]noite: ")
+leia (turno)
+
+
+Se (turno = "M") ou (turno = "m") entao
+   Escreval ("Bom dia!")
+Senao
+   Se (turno = "V") ou (turno = "v") entao
+      Escreval ("Boa tarde!")
+   Senao
+      Se (turno = "N") ou (turno = "n") entao
+         Escreval ("Boa noite!")
+      Senao
+         Se (turno <> ) entao
+            Escreval ("Valor invalido!")
+         Fimse
+      Fimse
+   Fimse
+Fimse
+fimalgoritmo

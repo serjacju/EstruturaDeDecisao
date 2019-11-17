@@ -1,0 +1,35 @@
+algoritmo "Exercicio11"
+var
+salario: real
+inicio
+escreva ("digite o salario atual do funcionario: ")
+leia (salario)
+se (salario <= 280) entao
+   escreval ("O salario do funcionario era: R$", salario)
+   escreval ("agora o salario é: R$", salario*1.2)
+   escreval("o reajuste foi de 20%")
+   escreval ("o valor de aumento foi de: R$", salario*0.2)
+senao
+   se (salario > 281) e (salario <= 700) entao
+      escreval ("O salario do funcionario era: R$", salario)
+      escreval ("agora o salario é: R$", salario*1.15)
+      escreval("o reajuste foi de 15%")
+      escreval ("o valor de aumento foi de: R$", salario*0.15)
+   senao
+      se (salario > 701) e (salario <= 1500) entao
+         escreval ("O salario do funcionario era: R$", salario)
+         escreval ("agora o salario é: R$", salario*1.1)
+         escreval("o reajuste foi de 10%")
+         escreval ("o valor de aumento foi de: R$", salario*0.1)
+      senao
+         se (salario >= 1501) entao
+            escreval ("O salario do funcionario era: R$", salario)
+            escreval ("agora o salario é: R$", salario*1.05)
+            escreval("o reajuste foi de 5%")
+            escreval ("o valor de aumento foi de: R$", salario*0.05)
+         fimse
+      fimse
+   fimse
+fimse
+
+fimalgoritmo

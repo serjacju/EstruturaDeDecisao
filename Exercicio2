@@ -1,0 +1,19 @@
+algoritmo "Exercicio2"
+var
+num : real
+
+inicio
+escreva ("Digite um número para saber se é positivo ou negativo: ")
+leia (num)
+se (num > 0 ) entao
+   escreval ("O número digitado é positivo")
+senao
+   se (num = 0) entao
+      escreval ("O número digitado é igual a 0")
+   senao
+      se (num < 0) entao
+         escreval ("O número digitado é negativo")
+      fimse
+   fimse
+fimse
+fimalgoritmo

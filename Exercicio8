@@ -1,0 +1,42 @@
+algoritmo "Exercicio8"
+var
+n1, n2, n3: inteiro
+inicio
+escreva ("Digite o valor do primeiro produto: ")
+leia (n1)
+escreva ("Digite o valor do segundo produto: ")
+leia (n2)
+escreva ("Digite o valor do segundo produto: ")
+leia (n3)
+
+se (n1 < n2) e (n1 < n3) entao
+   escreval ("o produto mais barato é o primeiro produto, e custa :", n1)
+senao
+   se (n2 < n1) e (n2 < n3) entao
+      escreval ("o produto mais barato é o segundo produto, e custa: ", n2)
+   senao
+      se (n3 < n1) e (n3 < n2) entao
+         escreval ("o produto mais barato é o segundo produto, e custa: ", n3)
+      senao
+         se (n1 = n2) e (n1 = n3) e (n2 = n3) entao
+            escreval ("todos os produtos tem o mesmo valor!")
+         senao
+            se (n1 = n2) entao
+               escreval ("o produto :", n1, " e o produto:", n2, " são os mais baratos!")
+            senao
+               se (n2 = n3) entao
+                  escreval ("o produto :", n2, " e o produto:", n3, " são os mais baratos!")
+               senao
+                  se (n3 = n1) entao
+                     escreval ("o produto: ", n1, " e o produto:", n3, " são os mais baratos!")
+                  senao
+
+                  fimse
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+fimse
+
+fimalgoritmo

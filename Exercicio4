@@ -1,0 +1,15 @@
+algoritmo "Exercicio4"
+var
+letra : caractere
+
+inicio
+
+escreva ("Digite a letra para saber se é vogal ou consoante: ")
+leia (letra)
+se (letra = "a") ou (letra = "e") ou (letra = "i") ou (letra = "o") ou (letra = "u") entao
+   escreval ("A letra, ", letra, " é uma vogal")
+senao
+   escreval ("A letra, ", letra, " é uma consoante")
+fimse
+
+fimalgoritmo

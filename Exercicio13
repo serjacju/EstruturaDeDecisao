@@ -1,0 +1,40 @@
+algoritmo "Exercicio13 "
+var
+dia:real
+
+inicio
+escreva ("Escreva um número para saber o dia da semana: ")
+leia (dia)
+Se (dia = 1) entao
+   escreval ("o dia da semana é domingo")
+senao
+   se (dia = 2) entao
+      escreval ("o dia da semana é segunda-feira")
+   senao
+      se (dia = 3) entao
+         escreval ("o dia da semana é terça-feira")
+      senao
+         se (dia = 4) entao
+            escreval ("o dia da semana é quarta-feira")
+         senao
+            se (dia = 5) entao
+               escreval ("o dia da semana é quinta-feira")
+            senao
+               se (dia = 6) entao
+                  escreval ("o dia da semana é sexta-feira")
+               senao
+                  se (dia = 7) entao
+                     escreval ("o dia da semana é sábado")
+                  senao
+                     se (dia <>) entao
+                        Escreval ("valor invalido")
+                     fimse
+                  fimse
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+fimse
+
+fimalgoritmo

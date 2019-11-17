@@ -1,0 +1,52 @@
+algoritmo "Exercicio12"
+var
+
+salario, qh, vh: real
+
+inicio
+
+Escreva ("Digite a quantidade de horas trabalhadas no mês: ")
+leia (qh)
+Escreva ("Digite o valor de sua hora trabalhada: ")
+leia (vh)
+
+salario <- qh*vh
+
+Escreval (" ----------------------------- ")
+Escreval (" Calculo de folha de pagamento")
+Escreval (" ----------------------------- ")
+Escreval (" Salario bruto: R$", salario)
+
+se (salario <= 900) entao
+   Escreval (" O desconto de IR é isento para salarios abaixo de R$ 900")
+   Escreval (" (-) Inss: ", (salario *0.10))
+   Escreval (" FGTS (11%): ", (salario *0.11))
+   Escreval (" Total de descontos: ", (salario*0.10))
+   escreval (" Salário Liquido: ", (salario-(salario*0.1)))
+senao
+   se (salario >= 901) e (salario <= 1500) entao
+      Escreval (" (-) IR: ", (salario *0.05))
+      Escreval (" (-) Inss: ", (salario *0.10))
+      Escreval (" FGTS (11%): ", (salario *0.11))
+      Escreval (" Total de descontos: ", (salario*0.10)+(salario*0.05))
+      escreval (" Salário Liquido: ", (salario-((salario*0.05)+(salario*0.1))))
+   senao
+      se (salario >= 1501) e (salario <= 2500) entao
+         Escreval (" (-) IR: ", (salario *0.1))
+         Escreval (" (-) Inss: ", (salario *0.10))
+         Escreval (" FGTS (11%): ", (salario *0.11))
+         Escreval (" Total de descontos: ", (salario*0.10)+(salario*0.1))
+         escreval (" Salário Liquido: ", (salario-((salario*0.1)+(salario*0.1))))
+      senao
+         se (salario >= 2501) entao
+            Escreval (" (-) IR: ", (salario *0.2))
+            Escreval (" (-) Inss: ", (salario *0.10))
+            Escreval (" FGTS (11%): ", (salario *0.11))
+            Escreval (" Total de descontos: ", (salario*0.10)+(salario*0.2))
+            escreval (" Salário Liquido: ", (salario-((salario*0.2)+(salario*0.1))))
+         fimse
+      fimse
+   fimse
+fimse
+
+fimalgoritmo

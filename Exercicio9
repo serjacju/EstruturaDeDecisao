@@ -1,0 +1,48 @@
+algoritmo "Exercicio9"
+var
+n1, n2, n3: real
+inicio
+escreva ("Digite o primeiro número: ")
+leia  (n1)
+escreva ("Digite o segundo número: ")
+leia  (n2)
+escreva ("Digite o terceiro número: ")
+leia  (n3)
+
+limpatela
+Escreval ("A ordem decrescente dos números é :")
+
+Se (n1 > n2) e (n1 > n3) entao
+   Escreval ("O número maior é: ", n1)
+Senao
+   Se (n2 > n1) e (n2 > n3) entao
+      Escreval ("O número maior é: ", n2)
+   Senao
+      Se (n3 > n2) e (n3 > n1) entao
+         Escreval ("O número maior é: ", n3)
+      Fimse
+   Fimse
+Fimse
+Se (n1 > n2) e (n1 < n3) entao
+   Escreval ("O número médio é: " ,n1)
+Senao
+   Se (n2 > n1) e (n2 < n3) entao
+      Escreval ("O número médio é: " ,n2)
+   Senao
+      Se (n3 > n2) e (n3 < n1) entao
+         Escreval ("O número médio é: ", n3)
+      Fimse
+   Fimse
+Fimse
+Se (n1 < n2) e (n1 < n3) entao
+   Escreval ("O menor número é: ", n1)
+Senao
+   Se (n2 < n1) e (n2 < n3) entao
+      Escreval ("O menor número é: ", n2)
+   Senao
+      Se (n3 < n2) e (n3 < n1) entao
+         Escreval ("O menor número é: ", n3)
+      Fimse
+   Fimse
+Fimse
+fimalgoritmo

@@ -1,0 +1,16 @@
+algoritmo "Exercicio1"
+var
+num1, num2 : real
+
+inicio
+escreva ("Digite o primeiro número: ")
+leia (num1)
+escreva ("Digite o segundo número: ")
+leia (num2)
+
+se (num1 > num2) entao
+   escreval ("O maior número digitado é o primeiro: ", num1)
+senao
+   Escreval ("O maior número digitado é o segundo: ", num2)
+fimse
+fimalgoritmo

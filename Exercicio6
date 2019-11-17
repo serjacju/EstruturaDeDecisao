@@ -1,0 +1,25 @@
+algoritmo "Exercicio6"
+var
+n1, n2, n3: inteiro
+
+inicio
+
+Escreva ("Digite o primeiro numero: ")
+Leia (n1)
+Escreva ("Digite o segundo numero: ")
+Leia (n2)
+Escreva ("Digite o terceiro numero: ")
+Leia (n3)
+Se (n1 > n2) e (n1 > n3) entao
+   Escreval ("O Maior número digitado é: ", n1)
+Senao
+   Se (n2 > n1) e (n2 > n3) entao
+      Escreval ("O Maior número digitado é: ", n2)
+   Senao
+      Se (n3 > n2) e (n3 > n1) entao
+         Escreval ("O Maior número digitado é: ", n3)
+      Fimse
+   Fimse
+Fimse
+
+fimalgoritmo
